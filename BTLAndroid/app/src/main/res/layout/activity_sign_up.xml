@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggame"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="520dp"
+        android:layout_below="@+id/imgLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+
+        <EditText
+            android:id="@+id/tvMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/btnstyle"
+            android:ems="10"
+            android:hint="Mail"
+            android:inputType="textPersonName"
+            android:paddingLeft="50dp"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/imgMail"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/tvMail"
+            android:layout_alignBottom="@+id/tvMail"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@mipmap/ic_mail" />
+
+        <EditText
+            android:id="@+id/tvUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvMail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="47dp"
+            android:background="@drawable/btnstyle"
+            android:ems="10"
+            android:hint="User"
+            android:inputType="textPersonName"
+            android:paddingLeft="50dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgUser"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/tvUser"
+            android:layout_alignBottom="@+id/tvUser"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@mipmap/ic_account" />
+
+        <EditText
+            android:id="@+id/edtPaswd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUser"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="54dp"
+            android:background="@drawable/btnstyle"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/imgPasswd"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/edtPaswd"
+            android:layout_alignBottom="@+id/edtPaswd"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@mipmap/ic_passwd" />
+
+        <ImageView
+            android:id="@+id/imgShowPaswd"
+            android:layout_width="25dp"
+            android:layout_height="15dp"
+            android:layout_alignTop="@+id/edtPaswd"
+            android:layout_alignEnd="@+id/edtPaswd"
+            android:layout_alignBottom="@+id/edtPaswd"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@mipmap/ic_showpass"
+            android:focusable="auto"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/edtConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPaswd"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="54dp"
+            android:background="@drawable/btnstyle"
+            android:ems="10"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:paddingLeft="50dp"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/imgConfirm"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/edtConfirm"
+            android:layout_alignBottom="@+id/edtConfirm"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="2.5dp"
+            android:background="@mipmap/ic_confirmpas" />
+
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="90dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/edtConfirm"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/changecolor"
+            android:text="Sign In" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="90dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/edtConfirm"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="37dp"
+            android:background="@drawable/changecolor"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+</RelativeLayout>

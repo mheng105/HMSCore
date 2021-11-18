@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "117613348789",
+    "firebase_url": "https://android-nangcao-default-rtdb.firebaseio.com",
+    "project_id": "android-nangcao",
+    "storage_bucket": "android-nangcao.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:117613348789:android:eb3fb3e67910810c9cfbfc",
+        "android_client_info": {
+          "package_name": "com.example.arithmeticgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "117613348789-hb27ljtf8uf9bcnglt8p1r3f9mpmkvrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEweoxLV27N5MpUZiczHx6pYD7ehFih6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "117613348789-hb27ljtf8uf9bcnglt8p1r3f9mpmkvrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
